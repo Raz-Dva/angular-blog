@@ -8,7 +8,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SingleCategoryComponent } from './pages/single-category/single-category.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
-import { TermsAndConditionComponent } from './pages/terms-and-condition/terms-and-condition.component';
+import { TermsAndConditionsComponent } from 'src/app/pages/terms-and-conditions/terms-and-conditions.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { SubscriptionFormComponent } from './subscription-form/subscription-form.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +27,7 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     HomeComponent,
     SingleCategoryComponent,
     SinglePostComponent,
-    TermsAndConditionComponent,
+    TermsAndConditionsComponent,
     ContactUsComponent,
     SubscriptionFormComponent,
     AboutUsComponent,
