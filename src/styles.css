@@ -14,3 +14,6 @@ body {
   color: var(--body-text-color);
 }
 
+.app-body {
+  margin-top: 80px;
+}
