@@ -17,6 +17,10 @@ import {RouterModule} from "@angular/router";
 import { CommentFormComponent } from './comments/comment-form/comment-form.component';
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+import { MainSliderComponent } from './layouts/main-slider/main-slider.component';
+import {GalleryModule} from "ng-gallery";
+import {SliderStandaloneModule} from "src/app/layouts/main-slider/slider.module";
+import { GALLERY_CONFIG, GalleryConfig } from 'ng-gallery';
 
 @NgModule({
   declarations: [
@@ -33,13 +37,16 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     AboutUsComponent,
     CommentFormComponent,
     CommentListComponent,
-    PostCardComponent
+    PostCardComponent,
+    // MainSliderComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        RouterModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
+    // GalleryModule,
+    SliderStandaloneModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
