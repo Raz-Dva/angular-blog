@@ -1,23 +1,23 @@
-<div class="wrap-main-gallery" #wrapGallery>
-  <gallery
-  [items]="items"
-  [counter]="true"
-  [autoPlay]="false"
-  [thumbHeight]="thumbHeight"
-  imageSize="cover"
-  thumbPosition="left"
-  thumbView="contain"
-  ></gallery>
+<div class="wrap-main-gallery app-container" #wrapGallery>
+      <gallery
+        [items]="items"
+        [counter]="true"
+        [autoPlay]="false"
+        [thumbHeight]="thumbHeight"
+        imageSize="cover"
+        thumbPosition="left"
+        thumbView="contain"
+      ></gallery>
 
-  <ng-template #itemTemplate
-               let-index="index"
-               let-type="type"
-               let-data="data"
-               let-currIndex="currIndex">
-    <div *ngIf="type === 'image' && index === currIndex"
-         id="item-text-{{ index }}"
-         class="item-text">
-      {{data?.text}}
+      <ng-template
+                   let-index="index"
+                   let-type="type"
+                   let-data="data"
+                   let-currIndex="currIndex">
+        <div *ngIf="type === 'image' && index === currIndex"
+             id="item-text-{{ index }}"
+             class="item-text">
+          {{data?.text}}
+        </div>
+      </ng-template>
     </div>
-  </ng-template>
-</div>
