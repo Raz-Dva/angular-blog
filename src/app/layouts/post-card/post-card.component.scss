@@ -1,3 +1,22 @@
+@import "color-variables";
 :host {
   display: block;
+  margin-top: 30px;
+}
+
+.app-card-box-img {
+  border: 1px solid;
+  min-height: 67%;
+  max-width: 150px;
+}
+
+.app-card-title {
+  color: $charcoal;
+}
+
+.app-card {
+  padding: 10% 20%;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
 }

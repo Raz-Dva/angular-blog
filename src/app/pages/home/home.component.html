@@ -3,30 +3,16 @@
 </section>
 
 <section class="featured-section bg-charcoal">
-  <div class="app-container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mt-5 bg-white">
-  <div class="app-container">
-    <div class="row text-dark">
-      <div class="col-md-12 text-center">
-        <h2>Latest Posts</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <app-post-card></app-post-card>
-      </div>
+  <div class="featured-container app-container">
+    <div class="row featured-row">
+      <div class="col-12">COL-12  {{width}}</div>
+      <ng-container *ngFor="let col of w.cols; let i = index">
+        <div class="col-xl-3 col-lg-4 col-sm-6 d-flex">
+          <ng-container *ngFor="let post of posts; let j = index">
+            <app-post-card *ngIf="((j + w.cols.length + i)  % (w.cols.length)) === 0" [item]="j" [title]="post.title"></app-post-card>
+          </ng-container>
+        </div>
+      </ng-container>
     </div>
   </div>
 </section>

@@ -7,17 +7,21 @@
         imageSize="cover"
         thumbPosition="left"
         thumbView="contain"
+        [itemTemplate]="slideTemplate"
       ></gallery>
 
-      <ng-template
+      <ng-template #slideTemplate
                    let-index="index"
                    let-type="type"
                    let-data="data"
                    let-currIndex="currIndex">
         <div *ngIf="type === 'image' && index === currIndex"
-             id="item-text-{{ index }}"
-             class="item-text">
-          {{data?.text}}
+             id="slide-template-{{ index }}"
+             class="slide-template d-flex align-items-end flex-row">
+          <div class="slide-text grotesk-font">
+            {{slideData[index].title}}
+            <p class="slide-pretext">{{slideData[index].pretext}}</p>
+          </div>
         </div>
       </ng-template>
     </div>

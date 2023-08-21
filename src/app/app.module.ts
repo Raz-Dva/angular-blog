@@ -21,6 +21,7 @@ import { MainSliderComponent } from './layouts/main-slider/main-slider.component
 import {GalleryModule} from "ng-gallery";
 import {SliderStandaloneModule} from "src/app/layouts/main-slider/slider.module";
 import { GALLERY_CONFIG, GalleryConfig } from 'ng-gallery';
+import {getWindow, WINDOW} from "src/app/utils/help-functios/window-helper";
 
 @NgModule({
   declarations: [
@@ -38,16 +39,19 @@ import { GALLERY_CONFIG, GalleryConfig } from 'ng-gallery';
     CommentFormComponent,
     CommentListComponent,
     PostCardComponent,
-    // MainSliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    // GalleryModule,
     SliderStandaloneModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: WINDOW,
+      useFactory: getWindow,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
