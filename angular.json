@@ -36,9 +36,9 @@
               ]
             },
             "styles": [
-              "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/styles/index.scss"
+              "src/assets/styles/index.scss",
+              "src/styles.css"
             ],
             "scripts": []
           },

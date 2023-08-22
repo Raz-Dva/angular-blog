@@ -2,6 +2,34 @@
   display: block;
 }
 
-.featured-row > .d-flex {
+.tiles-row {
+  margin-bottom: 17px;
+}
+
+.tiles-row > .d-flex {
   flex-direction: column;
 }
+
+.section-header {
+  font-style: oblique;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.tiles-section {
+  position: relative;
+}
+
+//.tiles-section:after {
+//  content: '';
+//  display: block;
+//  position: absolute;
+//  width: 150%;
+//  top: 35%;
+//  bottom: 28%;
+//  transform: translate(-50%) rotate(-45deg);
+//  left: 50%;
+//  box-shadow: 0px 0px 60px 24px #ffffff38, inset 0px 0px 60px 24px #ffffff38;
+//}

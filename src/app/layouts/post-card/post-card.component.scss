@@ -1,22 +1,28 @@
 @import "color-variables";
 :host {
   display: block;
-  margin-top: 30px;
+  margin-bottom: 17px;
 }
 
 .app-card-box-img {
-  border: 1px solid;
+  display: block;
   min-height: 67%;
-  max-width: 150px;
+  width: 100%;
 }
 
 .app-card-title {
-  color: $charcoal;
+  font-size: 33px;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: .9;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #c7c7c7, 0 1px 0 #000;
 }
 
 .app-card {
-  padding: 10% 20%;
+  padding: 12% 13%;
   flex-direction: column;
   max-width: 320px;
   margin: 0 auto;
+  border: 1px solid #cfcfcf;
 }

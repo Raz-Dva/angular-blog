@@ -1,4 +1,24 @@
+@import "color-variables";
+
 :host {
   display: block;
   margin-top: auto;
+}
+
+footer {
+  padding: 40px 16px 30px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+.footer-nav .nav-link {
+  color: $lightSilver;
+}
+
+.site-name {
+  font-size: 25px;
+}
+
+.copyright-footer {
+  font-size: 14px;
 }

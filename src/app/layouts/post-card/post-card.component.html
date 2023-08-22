@@ -1,11 +1,16 @@
-<div class="app-card bg-quartz d-flex justify-content-center align-items-center"  [style.height]="randomHighEl + 'px'">
-  <div class="app-card-body">
-    <h5 class="app-card-title">Card title {{item}}</h5>
+<div
+  class="app-card bg-quartz d-flex justify-content-center align-items-center"
+  [style.height]="randomHighEl + 'px'"
+  [ngClass]="shadowClass"
+>
+  <div class="app-card-body position-relative">
+    <h5 class="app-card-title text-uppercase">
+      <a [routerLink]="'post/'+ post.id" class="color-charcoal">{{post.title}}</a>
+    </h5>
 <!--    <p class="app-card-text">{{text}}</p>-->
 <!--    <a href="#" class="btn btn-primary">Go somewhere</a>-->
   </div>
-  <div class="app-card-box-img">
-    <img src="/assets/images/post2.jpg" class="app-card-img img-cover" alt="">
-  </div>
+  <a [routerLink]="'post/'+ post.id" class="app-card-box-img">
+    <img [src]="post.image" class="app-card-img img-cover" alt="">
+  </a>
 </div>
-

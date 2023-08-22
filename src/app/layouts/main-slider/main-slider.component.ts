@@ -18,14 +18,14 @@ export class MainSliderComponent implements OnInit {
   items!: GalleryItem[];
   slideData = [
     {
-      srcUrl: "https://preview.ibb.co/jrsA6R/img12.jpg",
-      previewUrl: "https://preview.ibb.co/jrsA6R/img12.jpg",
+      srcUrl: "/assets/images/slide1.jpg",
+      previewUrl: "/assets/images/slide1.jpg",
       title: "Whereas recognition of the inherent dignity",
       pretext: "Exploring the serene underwater world, surrounded by colorful corals and graceful marine life, is a captivating experience that rejuvenates the soul",
     },
     {
-      srcUrl: "https://preview.ibb.co/kPE1D6/clouds.jpg",
-      previewUrl: "https://preview.ibb.co/kPE1D6/clouds.jpg",
+      srcUrl: "/assets/images/slide2.jpg",
+      previewUrl: "/assets/images/slide2.jpg",
       title: "Whereas recognition of the inherent dignity",
       pretext: "Exploring the serene underwater world, surrounded by colorful corals and graceful marine life, is a captivating experience that rejuvenates the soul",
     },
@@ -36,14 +36,14 @@ export class MainSliderComponent implements OnInit {
       pretext: "Exploring the serene underwater world, surrounded by colorful corals and graceful marine life, is a captivating experience that rejuvenates the soul",
     },
     {
-      srcUrl: "https://ngx-gallery.netlify.app/assets/img/img13.jpg",
-      previewUrl: "https://ngx-gallery.netlify.app/assets/img/img13.jpg",
+      srcUrl: "/assets/images/slide4.jpg",
+      previewUrl: "/assets/images/slide4.jpg",
       title: "Lorem Ipsum Lorem IpsumLorem Ipsum",
       pretext: "Exploring the serene underwater world, surrounded by colorful corals and graceful marine life, is a captivating experience that rejuvenates the soul",
     },
     {
-      srcUrl: "https://pixabay.com/get/g33e685cd57b77717f39842608e237fb42954215a3bb9ab87cb0f95f00cc9f21cc3b21632181081eb6a73c5d021df6a69_1280.jpg",
-      previewUrl: "https://pixabay.com/get/g33e685cd57b77717f39842608e237fb42954215a3bb9ab87cb0f95f00cc9f21cc3b21632181081eb6a73c5d021df6a69_1280.jpg",
+      srcUrl: "/assets/images/slide5.jpg",
+      previewUrl: "/assets/images/slide5.jpg",
       title: "Lorem Ipsum Lorem IpsumLorem Ipsum",
       pretext: "Exploring the serene underwater world, surrounded by colorful corals and graceful marine life, is a captivating experience that rejuvenates the soul",
     }

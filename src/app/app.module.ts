@@ -17,10 +17,7 @@ import {RouterModule} from "@angular/router";
 import { CommentFormComponent } from './comments/comment-form/comment-form.component';
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
-import { MainSliderComponent } from './layouts/main-slider/main-slider.component';
-import {GalleryModule} from "ng-gallery";
 import {SliderStandaloneModule} from "src/app/layouts/main-slider/slider.module";
-import { GALLERY_CONFIG, GalleryConfig } from 'ng-gallery';
 import {getWindow, WINDOW} from "src/app/utils/help-functios/window-helper";
 
 @NgModule({

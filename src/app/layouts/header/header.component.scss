@@ -1,8 +1,18 @@
 :host {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
+  display: inline-block;
+  width: 50%;
+
+  .navbar {
+    height: 76px;
+  }
+}
+
+.site-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar-logo {
+  margin-left: 22%;
+  text-shadow: 2px 2px 2px #121212;
 }

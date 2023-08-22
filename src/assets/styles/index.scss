@@ -1,9 +1,17 @@
 @import "color-variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Space+Grotesk:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&family=Space+Grotesk:wght@300;400;600;700&display=swap');
 
-.grotesk-font {
+.font-grotesk {
   font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-lobster {
+  font-family: 'Lobster', cursive;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
 }
 
 .bg-silver {
@@ -17,4 +25,12 @@
 
 .bg-quartz {
   background-color: $quartz;
+}
+
+.color-lightSilver {
+  color: $lightSilver;
+}
+
+.color-charcoal {
+  color: $charcoal;
 }
