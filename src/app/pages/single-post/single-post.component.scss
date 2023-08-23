@@ -1,10 +1,11 @@
 :host {
   display: block;
-  margin-top: 110px;
+  padding-top: 78px;
   font-size: 20px;
 }
 
-.single-post {
+.lt-img-post {
+  max-height: 250px;
 }
 
 .rt-img-post {
@@ -13,4 +14,23 @@
 
 .rm-img-post {
   max-height: 300px;
+}
+
+.right-post-text {
+  margin-top: 10%;
+}
+
+.line-thin-thicker {
+  height: 16px;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+  margin-top: 10px;
+  border-right: none;
+  border-left: none;
+  opacity: 1;
+}
+
+.single-post-title {
+  line-height: 1.5;
 }
