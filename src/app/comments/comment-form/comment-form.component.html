@@ -1,18 +1,17 @@
 <div class="card mt-5">
   <div class="card-body">
-    <h4>Leave a Comment</h4>
-    <p>Sub title</p>
+    <h4 class="fst-italic">Leave a Comment</h4>
+<!--    <p>Sub title</p>-->
     <form action="">
-      <div class="mb-3">
-        <label for="name" class="form-label d-block">Name</label>
-        <input type="text" name="form-control" id="name">
+      <div class="mb-3 mt-3">
+        <label for="name" class="form-label d-block text-md_sm">Name</label>
+        <input type="text" class="form-control" name="name" id="name">
       </div>
       <div class="mb-3">
-        <label for="comment" class="form-label d-block">Comment</label>
-        <textarea id="comment" cols="30" rows="10" class="form-control" placeholder="Add your comment"></textarea>
+        <label for="comment" class="form-label d-block text-md_sm">Comment</label>
+        <textarea id="comment" cols="30" rows="5" class="form-control" placeholder="Add your comment"></textarea>
       </div>
-      <button class="btn btn-info">Add a Comment</button>
-
+      <button class="btn btn-base">Post Comment</button>
     </form>
   </div>
 </div>

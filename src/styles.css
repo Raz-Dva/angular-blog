@@ -86,3 +86,8 @@ body {
 .card-shadow-light {
   box-shadow: 9px 9px 1px -4px #b9b9b9;
 }
+
+.card {
+  border-radius: 0;
+}
+

@@ -1,8 +1,8 @@
-@import "color-variables";
+@import "color-vars";
+@import "font-size-vars";
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&family=Roboto&family=Space+Grotesk:wght@300;400;600;700&display=swap');
 
-$font-size-base: 16px;
 
 .font-grotesk {
   font-family: 'Space Grotesk', sans-serif;
@@ -12,6 +12,7 @@ $font-size-base: 16px;
   font-family: 'Lobster', cursive;
 }
 
+//---------------------- backgrounds ------------
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -37,22 +38,46 @@ $font-size-base: 16px;
   color: $charcoal;
 }
 
+//---------------- text ------------------
 .text-base {
   font-size: $font-size-base;
 }
 
 .text-md {
-  font-size: $font-size-base * 1.375;
+  font-size: $font-size-md;
 }
 
-.text-sm {
-
+.text-md_sm {
+  font-size: $font-size-md_sm;
 }
 
 .text-lg {
-  font-size: $font-size-base * 2.06;
+  font-size: $font-size-lg;
 }
 
 .text-xl {
-  font-size: 50px;
+  font-size: $font-size-xl;
 }
+
+.form-control:focus {
+  border-color: $beige_gold;
+  box-shadow: 0 0 3px 0 $beige_gold;
+}
+
+//----------- buttons ------------
+.btn-base {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 1em;
+}
+
+.btn-base:active,
+:not(.btn-check)+.btn-base:active,
+.btn-base:hover,
+.btn-base:focus {
+  background-color: $beige_gold;
+  border-color: var(--bs-body-color);
+  box-shadow: 0 0 3px 0 $beige_gold;
+}
+
+
